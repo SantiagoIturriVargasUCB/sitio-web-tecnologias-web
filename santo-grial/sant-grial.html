@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santo Grial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            display: grid;
+            grid-template: auto 1fr auto / auto 1fr auto;
+        }
+
+        /* Estilos para la estructura */
+        #header {
+            padding: 15px;
+            background-color: rgba(71,109,147,1);
+            color: white;
+            grid-column: 1 / 4;
+        }
+
+        #aside-left {
+            grid-column: 1 / 2;
+            padding: 15px;
+            background-color: rgba(144,94,65, 1);
+            color: white;
+        }
+
+        #aside-right {
+            grid-column: 3 / 4;
+            padding: 15px;
+            background-color: rgba(144,94,65, 1);
+            color: white;
+        }
+
+        #main {
+            grid-column: 2 / 3;
+            padding: 15px;
+            background-color: rgba(153,127,40, 1);
+            color: white;
+        }
+
+        #footer {
+            grid-column: 1 / 4;
+            padding: 15px;
+            background-color: rgba(71,109,147,1);
+            color: white;
+        }
+
+        /* Estilos adicionales */
+        .keyword {
+            font-size: 1.3em;
+            color: blue;
+            /* border: 5px dashed green; */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Cabecera</h1>
+    </div>
+
+    <div id="aside-left">
+        <h2>Menú Lateral Izquierdo</h2>
+        <ul>
+            <li class="keyword">Enlace 1</li>
+            <li class="keyword">Enlace 2</li>
+            <li class="keyword">Enlace 3</li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <h2>Contenido Principal</h2>
+        <p class="keyword">Este es el contenido principal de la página.</p>
+    </div>
+
+    <div id="aside-right">
+        <h2>Barra Lateral Derecha</h2>
+        <ul>
+            <li class="keyword">Enlace A</li>
+            <li class="keyword">Enlace B</li>
+            <li class="keyword">Enlace C</li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        <p>Pie de Página</p>
+    </div>
+
+</body>
+</html>
